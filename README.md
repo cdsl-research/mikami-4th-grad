@@ -13,7 +13,9 @@ https://qiita.com/TomonoriMikami/items/b7d38cb4c066cfd837a4
 
 実行は，以下のようにしてください．
 
-```python3 you-send.py```
+```shell
+python3 you-send.py
+```
 
 # receiver
 you-sendから送られてきた優先度の値を使用して，比較を行います．優先度の値が一番大きいファイル送信のみが送信を継続できるようになっています．他のファイル送信は，you-sendから送られてきたrsyncコマンドの親プロセスIDと子プロセスID，
@@ -22,4 +24,6 @@ IPアドレスを使用して中断します．中断していないファイル
 
 実行は，以下のようにしてください．
 
-```python3 reciever.py```
+```shell
+python3 reciever.py
+```
